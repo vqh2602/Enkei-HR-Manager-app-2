@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="HRManager" customModuleProvider="target">
+            <connections>
+                <outlet property="calendar" destination="2bf-ee-pTz" id="1O5-7P-fEB"/>
+                <outlet property="calendarHeightConstraint" destination="uGy-3N-1Nd" id="wDS-yH-fZb"/>
+                <outlet property="tableView" destination="ZcF-rh-hPU" id="v1U-fT-OKj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bf-ee-pTz" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="uGy-3N-1Nd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1fI-1a-7nH"/>
+                        <outlet property="delegate" destination="-1" id="z2x-rQ-ukh"/>
+                    </connections>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcF-rh-hPU">
+                    <rect key="frame" x="0.0" y="244" width="375" height="423"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6xF-lX-PQI"/>
+                        <outlet property="delegate" destination="-1" id="6nT-fN-Mt6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZcF-rh-hPU" secondAttribute="bottom" id="ClS-Iz-j3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZcF-rh-hPU" secondAttribute="trailing" id="KHz-J3-Pyo"/>
+                <constraint firstItem="2bf-ee-pTz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L4b-YP-E2V"/>
+                <constraint firstItem="ZcF-rh-hPU" firstAttribute="top" secondItem="2bf-ee-pTz" secondAttribute="bottom" constant="8" id="aZ9-YS-wHl"/>
+                <constraint firstItem="2bf-ee-pTz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hYt-qT-se4"/>
+                <constraint firstItem="ZcF-rh-hPU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iRM-or-Fhw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2bf-ee-pTz" secondAttribute="trailing" id="l65-pu-fcG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

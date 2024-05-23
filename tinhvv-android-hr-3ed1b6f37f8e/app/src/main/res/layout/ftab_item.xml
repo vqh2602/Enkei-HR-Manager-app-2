@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="62dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_small"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/tab1" />
+
+    <TextView
+        android:id="@+id/tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="6dp"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/text_size"
+        tools:text="Home" />
+
+</RelativeLayout>

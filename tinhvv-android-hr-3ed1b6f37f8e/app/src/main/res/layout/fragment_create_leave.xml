@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/selectableItemBackground"
+            android:padding="18dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?actionBarSize"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/LeaveForm_Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            app:fontFamily="@font/sanspro_semi_bold"
+            app:textAllCaps="false"/>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/viewRemain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRemainDayOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingRight="7dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="35dp"
+                    tools:text="1"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/Detail_RemainDay"
+                    android:textColor="@color/textDark"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/viewRemain">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/checkOff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/checkDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:checked="true"
+                            android:padding="3dp"
+                            android:text="@string/dayOff"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/sanspro_bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/checkShift"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/checkShift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:checked="false"
+                            android:padding="3dp"
+                            android:text="@string/timeOff"
+                            android:textColor="@color/textBlack"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/sanspro_bold"
+                            app:layout_constraintLeft_toRightOf="@+id/checkDays"
+                            app:layout_constraintRight_toRightOf="parent"/>
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/view_username"
+                        android:layout_width="0dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="7dp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintTop_toBottomOf="@+id/checkOff">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_user"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="6dp"
+                            android:src="@drawable/dropdown"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/bg_textbox_gray"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/edtPhoneNumber"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/edtPhoneNumber"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Detail_LeaveType"
+                            android:textColor="@color/text888686"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:fontFamily="@font/sanspro_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="true"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvLeaveType"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:ellipsize="middle"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text="@string/select_singleType"
+                            tools:text="@string/send_success_content"
+                            android:textColor="@color/textBlack"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:layout_constraintBottom_toBottomOf="@id/view1"
+                            app:layout_constraintLeft_toLeftOf="@+id/view1"
+                            app:layout_constraintRight_toLeftOf="@+id/ic_user"
+                            app:layout_constraintTop_toTopOf="@+id/view1"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/view_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        app:layout_constraintTop_toBottomOf="@id/view_username">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_lock"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="6dp"
+                            android:src="@drawable/date"
+                            android:background="?attr/selectableItemBackground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/text2"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@string/startDay"
+                            android:textColor="@color/text888686"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:fontFamily="@font/sanspro_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="true"/>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/bg_textbox_gray"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/text2"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvStartDate"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:gravity="center_vertical"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textBlack"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:layout_constraintBottom_toBottomOf="@id/view2"
+                            app:layout_constraintLeft_toLeftOf="@+id/view2"
+                            app:layout_constraintRight_toLeftOf="@+id/ic_lock"
+                            app:layout_constraintTop_toTopOf="@id/view2"
+                            tools:text="21/01/2019"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/view_enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        app:layout_constraintTop_toBottomOf="@id/view_password">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_lock4"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="6dp"
+                            android:src="@drawable/date"
+                            android:background="?attr/selectableItemBackground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/bg_textbox_gray"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/tvOffTypeTitle"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvOffTypeTitle"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@string/endDay"
+                            android:textColor="@color/text888686"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:fontFamily="@font/sanspro_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:textAllCaps="true"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvEndDate"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:gravity="center_vertical"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textBlack"
+                            android:textColorHint="@color/textGray"
+                            android:textSize="@dimen/text_size_medium"
+                            app:layout_constraintBottom_toBottomOf="@id/view3"
+                            app:layout_constraintLeft_toLeftOf="@+id/view3"
+                            app:layout_constraintRight_toLeftOf="@+id/ic_lock4"
+                            app:layout_constraintTop_toTopOf="@id/view3"
+                            tools:text="22/01/2019"/>
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTitleNote"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/Register_Note"
+                        android:textColor="@color/text888686"
+                        android:textColorHint="@color/textGray"
+                        android:textSize="@dimen/text_size_medium"
+                        app:fontFamily="@font/sanspro_bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/edtNote"
+                        app:textAllCaps="true"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtNote"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_textbox_gray"
+                        android:gravity="top"
+                        android:hint="@string/reasonDetail"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="@dimen/text_size_medium"
+                        app:layout_constraintLeft_toRightOf="@+id/tvTitleNote"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view_enddate"
+                        tools:text="Delta compression u."/>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ic_lock5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_expand_textbox"
+                        app:layout_constraintBottom_toBottomOf="@+id/edtNote"
+                        app:layout_constraintRight_toRightOf="@id/edtNote"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/btnSave"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/bg_textbox_color_primary"
+                        android:gravity="center"
+                        android:text="@string/Save"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_medium"
+                        app:fontFamily="@font/sanspro_semi_bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/btnSaveAndSend"
+                        app:layout_constraintTop_toBottomOf="@id/edtNote"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/btnSaveAndSend"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_textbox_shape_color_primary"
+                        android:gravity="center"
+                        android:text="@string/SaveSend"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_medium"
+                        app:fontFamily="@font/sanspro_semi_bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/btnSave"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/edtNote"/>
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/calendarHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/previousButton"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="55dp"
+                        android:layout_height="0dp"
+                        android:tint="@color/white"
+                        android:rotation="90"
+                        android:src="@drawable/dropdown"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/forwardButton"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="55dp"
+                        android:layout_height="0dp"
+                        android:tint="@color/white"
+                        android:rotation="-90"
+                        android:src="@drawable/dropdown"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/currentDateLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_title_date"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_date_title_size"
+                        app:layout_constraintLeft_toRightOf="@id/previousButton"
+                        app:layout_constraintRight_toLeftOf="@id/forwardButton"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                </android.support.constraint.ConstraintLayout>
+                <com.haibin.calendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    app:calendar_height="40dp"
+                    app:datePicker="true"
+                    app:current_day_text_color="@color/colorPrimary"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

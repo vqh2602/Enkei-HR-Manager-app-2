@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "975013673450",
+    "firebase_url": "https://quanlynghiphep-enkei.firebaseio.com",
+    "project_id": "quanlynghiphep-enkei",
+    "storage_bucket": "quanlynghiphep-enkei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975013673450:android:f3f46a69f268212d",
+        "android_client_info": {
+          "package_name": "com.savis.quanlynghiphep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975013673450-9b7gl6llc6d97mpubbigj43eqa8posbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU-uJemw8k7refM3hvzIWlyqNty8STX1A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975013673450:android:a74a43c8e893f824",
+        "android_client_info": {
+          "package_name": "com.savis.quanlynghiphep.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975013673450-9b7gl6llc6d97mpubbigj43eqa8posbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU-uJemw8k7refM3hvzIWlyqNty8STX1A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

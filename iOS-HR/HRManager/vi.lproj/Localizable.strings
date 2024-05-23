@@ -1,0 +1,121 @@
+/* 
+  Localization.strings
+  HRManager
+
+  Created by Tinh Vu on 1/13/19.
+  Copyright © 2019 Tinh Vu. All rights reserved.
+*/
+
+// Work Flow
+"Draft" = "Lưu nháp";
+"OLExecute" = "Chờ duyệt";
+"SMExecute" = "Chờ duyệt";
+"DMExecute" = "Chờ duyệt";
+"GDExecute" = "Chờ duyệt";
+"HRExecute" = "Chờ duyệt";
+"QuanLyCap1Execute" = "Chờ duyệt";
+"QuanLyCap2Execute" = "Chờ duyệt";
+"HCNSExecute" = "Chờ duyệt";
+"StoreContent" = "Đã xử lý";
+"DenialContent" = "Đã từ chối";
+"OperatorDenialContent" = "Đã từ chối";
+"StaffDenialContent" = "Đã từ chối";
+"SMDenialContent" = "Đã từ chối";
+"DMDenialContent" = "Đã từ chối";
+
+// Status
+"Draft" = "Lưu nháp";
+"Approve" = "Chờ duyệt";
+"Denial" = "Đã từ chối";
+"Publish" = "Đã xử lý";
+
+"Processing.StartProcessing" = "Trình duyệt";
+"Processing.Denial" = "Từ chối";
+"Processing.Approve" = "Đồng ý";
+"Processing.Publish" = "Duyệt";
+
+//Alert
+"HaveError" = "Có lỗi xảy ra";
+"PhoneNotEmpty" = "SDT không được trống";
+"PassNotEmpty" = "Mật khẩu không được trống";
+"OldPassNotEmpty" = "Mật khẩu cũ không được trống";
+"NewPassNotEmpty" = "Mật khẩu mới không được trống";
+"ConfirmPassNotEmpty" = "Xác nhận Mật khẩu không được trống";
+"ConfirmPassNotMatch" = "Xác nhận Mật khẩu không chính xác";
+"ChangePassSuccess" = "Đổi mật khẩu thành công";
+"ConfirmDeleteForm" = "Bạn có chắc muốn xoá đơn này không?";
+"EnterComment" = "Nhập comment";
+"EnterCommentContent" = "Bạn phải nhập comment để thực hiện";
+"MustChooseLeaveType" = "Bạn phải chọn loại đơn";
+"StartDateEndDate" = "Ngày kết thúc phải lớn hơn ngày bắt đầu";
+"CreatedFormEarly3Day" = "Bạn phải tạo đơn xin nghỉ trước 3 ngày";
+
+"ChooseStartDate" = "Chọn ngày bắt đầu";
+"ChooseEndDate" = "Chọn ngày kết thúc";
+
+"Undefined" = "Không xác định";
+"MinAgo" = "phút trước";
+"HourAgo" = "giờ trước";
+"DayAgo" = "ngày trước";
+"MonthAgo" = "tháng trước";
+"YearAgo" = "năm trước";
+
+"Delete" = "Xoá";
+"Save" = "LƯU";
+"SaveSend" = "LƯU VÀ GỬI";
+"Loading" = "Đang tải...";
+"Edit" = "Sửa";
+
+"Profile.Position" = "Vị trí";
+"Profile.StaffCode" = "Mã nhân viên";
+"Profile.Phone" = "Số điện thoại";
+"Profile.RemainDay" = "Số ngày nghỉ phép còn lại";
+"Profile.Logout" = "ĐĂNG XUẤT";
+
+"Home.LeaveType" = "Loại phép: ";
+"Home.NumberDay" = "Số ngày nghỉ: ";
+"Home.Day" = "ngày";
+"Home.Days" = "ngày";
+
+"Notification.Title" = "THÔNG BÁO";
+
+"Login.Phone" = "SỐ ĐIỆN THOẠI";
+"Login.Pass" = "MẬT KHẨU";
+"Login.Login" = "Đăng nhập";
+"Login.ChangePass" = "Thay đổi mật khẩu";
+
+"Register.OldPass" = "MẬT KHẨU CŨ";
+"Register.NewPass" = "MẬT KHẨU MỚI";
+"Register.ConfirmPass" = "XÁC NHẬN MẬT KHẨU";
+"Register.Save" = "Lưu";
+"Register.Title" = "THAY ĐỔI MẬT KHẨU";
+"Home.Title" = "QUẢN LÝ ĐƠN NGHỈ";
+
+"reasonDetail" = "Nhập nội dung";
+"allDay" = "Cả ngày";
+"morning" = "Nghỉ sáng";
+"afternoon" = "Nghỉ chiều";
+"dayOff" = "Nghỉ ngày";
+"timeOff" = "Nghỉ ca";
+"singleType" = "Loại đơn";
+"select_singleType" = "Chọn loại đơn";
+"startDay" = "Ngày bắt đầu";
+"endDay" = "Ngày kết thúc";
+"contentHolliday" = "Ghi chú";
+"ca_kip" = "Ca/kíp";
+"LeaveForm.Title" = "ĐĂNG KÝ NGHỈ";
+
+"Detail.Position" = "Chức vụ";
+"Detail.StaffCode" = "Mã nhân viên";
+"Detail.Phone" = "Số điện thoại";
+"Detail.LeaveType" = "Loại đơn";
+"Detail.OffDays" = "Ngày nghỉ";
+"Detail.CountDay" = "Số ngày nghỉ";
+"Detail.Accepter" = "Người duyệt";
+"Detail.Content" = "Ghi chú";
+"Detail.Title" = "CHI TIẾT ĐƠN NGHỈ";
+"Detail.RemainDay" = "Số ngày phép còn lại";
+
+"Result.Title" = "Gửi thành công!";
+"Result.Detail" = "Yêu cầu của bạn đã được chuyển đi thành công. Để xem chi tiết vui lòng kiểm tra tại trang quản lý đăng ký nghỉ ";
+"Result.Home" = "Trang chủ";

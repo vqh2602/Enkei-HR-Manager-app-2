@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="HRManager" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="j8M-0v-0ZL" id="qB3-Hv-d2F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YdP-Xm-ntY">
+                    <rect key="frame" x="92.5" y="60" width="190" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="8To-DI-bzZ"/>
+                        <constraint firstAttribute="height" constant="52" id="L9y-VH-Fze"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HR Smart Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLF-58-Gea">
+                    <rect key="frame" x="16" y="120" width="343" height="40"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="29"/>
+                    <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.69803921568627447" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-0v-0ZL">
+                    <rect key="frame" x="20" y="180" width="335" height="467"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jsf-bP-B4k">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pUb-hH-nxO"/>
+                        <outlet property="delegate" destination="-1" id="4NZ-xb-Qsv"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YdP-Xm-ntY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2L3-Vi-fXc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kLF-58-Gea" secondAttribute="trailing" constant="16" id="Cdq-zA-jr6"/>
+                <constraint firstItem="j8M-0v-0ZL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Nd8-gV-u4c"/>
+                <constraint firstItem="kLF-58-Gea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PNo-GA-fcd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="j8M-0v-0ZL" secondAttribute="bottom" constant="20" id="Upt-nP-WJh"/>
+                <constraint firstItem="YdP-Xm-ntY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="fER-7x-LGW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j8M-0v-0ZL" secondAttribute="trailing" constant="20" id="oV8-4u-7wP"/>
+                <constraint firstItem="j8M-0v-0ZL" firstAttribute="top" secondItem="kLF-58-Gea" secondAttribute="bottom" constant="20" id="rNC-Mk-rUD"/>
+                <constraint firstItem="kLF-58-Gea" firstAttribute="top" secondItem="YdP-Xm-ntY" secondAttribute="bottom" constant="8" id="sXE-2O-8Y2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_icon" width="190" height="52"/>
+    </resources>
+</document>

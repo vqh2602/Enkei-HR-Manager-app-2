@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterViewCell" customModule="HRManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-4W-zf8">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_status" translatesAutoresizingMaskIntoConstraints="NO" id="Rhz-rC-NnJ">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7I-Oe-g5T">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rhz-rC-NnJ" firstAttribute="top" secondItem="EIX-4W-zf8" secondAttribute="top" id="44C-6c-6f8"/>
+                            <constraint firstAttribute="bottom" secondItem="L7I-Oe-g5T" secondAttribute="bottom" id="4J6-mI-Qdc"/>
+                            <constraint firstItem="Rhz-rC-NnJ" firstAttribute="leading" secondItem="EIX-4W-zf8" secondAttribute="leading" id="8az-lH-UKo"/>
+                            <constraint firstAttribute="trailing" secondItem="L7I-Oe-g5T" secondAttribute="trailing" id="Bvr-cC-UEV"/>
+                            <constraint firstAttribute="trailing" secondItem="Rhz-rC-NnJ" secondAttribute="trailing" id="Mo8-ZM-dM3"/>
+                            <constraint firstItem="L7I-Oe-g5T" firstAttribute="top" secondItem="EIX-4W-zf8" secondAttribute="top" id="TxW-01-ujr"/>
+                            <constraint firstAttribute="bottom" secondItem="Rhz-rC-NnJ" secondAttribute="bottom" id="dY7-xc-xaD"/>
+                            <constraint firstItem="L7I-Oe-g5T" firstAttribute="leading" secondItem="EIX-4W-zf8" secondAttribute="leading" id="v5t-r6-ICT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="EIX-4W-zf8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DB2-gd-g5U"/>
+                <constraint firstAttribute="trailing" secondItem="EIX-4W-zf8" secondAttribute="trailing" id="XCI-pQ-mLE"/>
+                <constraint firstAttribute="bottom" secondItem="EIX-4W-zf8" secondAttribute="bottom" id="uBb-JX-0nb"/>
+                <constraint firstItem="EIX-4W-zf8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vfz-EC-jNB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="90" height="32"/>
+            <connections>
+                <outlet property="imvBGStatus" destination="Rhz-rC-NnJ" id="e9I-gI-11i"/>
+                <outlet property="lblTitle" destination="L7I-Oe-g5T" id="yVQ-4V-1En"/>
+                <outlet property="viewContent" destination="EIX-4W-zf8" id="fw0-N5-P9u"/>
+            </connections>
+            <point key="canvasLocation" x="220.80000000000001" y="145.72713643178412"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_status" width="95" height="32"/>
+    </resources>
+</document>

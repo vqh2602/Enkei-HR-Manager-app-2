@@ -1,0 +1,30 @@
+/* 
+  Localization.strings
+  HRManager
+
+  Created by Tinh Vu on 1/13/19.
+  Copyright © 2019 Tinh Vu. All rights reserved.
+*/
+
+// Work Flow
+"StartProcessing" = "Trình duyệt";
+"Denial" = "Từ chối";
+"Stop" = "Huỷ";
+"Approve" = "Gửi";
+"Publish" = "Duyệt";
+
+// Status
+"Draft" = "Lưu nháp";
+"StopContent" = "Đã huỷ";
+"DenialContent" = "Từ chối";
+"QuanLyCap1Execute" = "QLC1 duyệt";
+"QuanLyCap2Execute" = "QLC2 duyệt";
+"HCNSExecute" = "HCNS duyệt";
+"StoreContent" = "Đã duyệt";
+
+"Profile.Position" = "Vị trí";
+"Profile.StaffCode" = "Mã nhân viên";
+"Profile.Phone" = "Số điện thoại";
+"Profile.RemainDay" = "Số ngày nghỉ phép còn lại";
+
+"reasonDetail" = "Do tôi bận ốm nên xin phép nghỉ để đi khám bệnh. Tôi sẽ thu xếp làm bù sau. Tất mong anh/chị đồng ý cho tôi nghỉ";

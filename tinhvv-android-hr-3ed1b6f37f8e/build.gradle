@@ -1,0 +1,83 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.21'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+
+    supportLibraryVersion = '27.1.1'
+    junitVersion = "4.12"
+    expressoVersion = "3.0.1"
+    testRunnerVersion = "1.0.1"
+
+    //Library
+    multidexVersion = "1.0.1"
+
+    roomVersion = "1.0.0"
+    roomPagingVersion = "1.0.0-alpha4-1"
+
+    glideVersion = "4.8.0"
+    glideOkHttpVersion = "1.4.0"
+
+    circleImageVerion = "2.1.0"
+    roundImageVersion = "2.3.0"
+
+    socketIoVersion = "1.0.0"
+    bouncyCastleVersion = "1.45"
+
+    okHttpVersion = "3.8.1"
+    retrofitVersion = "2.3.0"
+    rxJavaVersion = "2.1.14"
+    rxAndroidVersion = "2.0.2"
+    rxKotlinVersion = "2.2.0"
+
+
+    mockitoVersion = '2.13.1'
+
+    tkRefreshLayoutVersion = "1.0.7"
+
+    marterialTexteditVersion = "2.1.4"
+
+    facebookSdkVersion = "4.29.0"
+
+    quickbloxVersion = "3.4.1"
+
+    versions = [rxJava    : "2.1.6",
+                rxBinding : "1.0.0"]
+
+    libraries = [supportAppCompat    : "com.android.support:appcompat-v7:${ext.supportLibraryVersion}",
+                 supportExifInterface: "com.android.support:exifinterface:26.0.1",
+
+                 rxJava              : "io.reactivex.rxjava2:rxjava:$ext.versions.rxJava",
+                 rxAndroid           : "io.reactivex.rxjava2:rxandroid:2.0.1",
+                 rxKotlin            : "io.reactivex.rxjava2:rxkotlin:2.1.0"]
+}

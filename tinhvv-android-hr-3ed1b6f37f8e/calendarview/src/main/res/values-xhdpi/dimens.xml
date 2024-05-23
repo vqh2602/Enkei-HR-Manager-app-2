@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_height">35dp</dimen>
+    <dimen name="label_size">11sp</dimen>
+    <dimen name="width_dot">10dp</dimen>
+    <dimen name="height_title_date">40dp</dimen>
+    <dimen name="height_day_of_week">35dp</dimen>
+    <dimen name="font_date_title_size">14sp</dimen>
+</resources>

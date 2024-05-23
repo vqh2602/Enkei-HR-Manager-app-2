@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:background="@color/textRed"
+        android:id="@+id/llWrapper"
+        android:layout_width="100dp"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/textRed"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/Delete"
+            app:fontFamily="@font/sanspro_bold"
+            android:textSize="@dimen/text_size_medium"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:visibility="visible"
+        app:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_radius">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_avatar_default"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/text_size_large"
+                app:fontFamily="@font/sanspro_bold"
+                app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+                app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+                app:layout_constraintTop_toTopOf="@+id/ivAvatar"
+                tools:text="Nguyễn Đình Lâm Đình Lâm" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDateCreate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text888686"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toStartOf="@+id/bgStatus"
+                app:layout_constraintStart_toStartOf="@+id/tvName"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                tools:text="18/01/2019" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bgStatus"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:alpha="0.2"
+                android:background="@drawable/bg_status"
+                android:backgroundTint="#FAB200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:maxWidth="100dp"
+                android:singleLine="true"
+                android:textColor="#FAB200"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/sanspro_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/Publish" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvLeaveType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text888686"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_goneMarginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDateCreate"
+                tools:text="Leave type: Khám thai cho vợ Leave type: Khám thai cho vợ" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTotalDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text888686"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLeaveType"
+                tools:text="Total: 2 days" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTimeLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text888686"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTotalDays"
+                tools:text="21/01/2019 - 22/01/2019" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/line_dash_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalDays" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalDays" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalDays"
+                tools:text="Lý do đến lịch khám hàng tháng" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/line_dash_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReason" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReason" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReason"
+                tools:text="Lý do đến lịch khám hàng tháng" />
+
+            <View
+                android:id="@+id/clickableView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:visibility="gone"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="MumberOfDaysRemainingCell" customModule="HRManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eow-6N-Rma">
+                        <rect key="frame" x="15" y="15" width="295" height="55.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ngày phép còn lại: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6d-r2-GtJ">
+                                <rect key="frame" x="15" y="19" width="150.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.27925524115562439" green="0.30440127849578857" blue="0.38040193915367126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-b5-2m7">
+                                <rect key="frame" x="165.5" y="19" width="10" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.27929303050041199" green="0.30832305550575256" blue="0.38432353734970093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NPm-b5-2m7" firstAttribute="leading" secondItem="J6d-r2-GtJ" secondAttribute="trailing" id="9cz-ZA-Ciz"/>
+                            <constraint firstItem="J6d-r2-GtJ" firstAttribute="centerY" secondItem="eow-6N-Rma" secondAttribute="centerY" id="OBV-Ax-WMt"/>
+                            <constraint firstItem="NPm-b5-2m7" firstAttribute="centerY" secondItem="J6d-r2-GtJ" secondAttribute="centerY" id="fzg-4I-Gs7"/>
+                            <constraint firstItem="J6d-r2-GtJ" firstAttribute="leading" secondItem="eow-6N-Rma" secondAttribute="leading" constant="15" id="wPt-oq-W3p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eow-6N-Rma" secondAttribute="trailing" constant="15" id="9es-6O-MdZ"/>
+                    <constraint firstItem="eow-6N-Rma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="abz-mY-L1Y"/>
+                    <constraint firstItem="eow-6N-Rma" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="cIT-fZ-yqY"/>
+                    <constraint firstAttribute="bottom" secondItem="eow-6N-Rma" secondAttribute="bottom" id="nGw-SZ-jpS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbTitle" destination="J6d-r2-GtJ" id="pOj-dp-37r"/>
+                <outlet property="lblNumberOfDayRemaing" destination="NPm-b5-2m7" id="JtJ-ci-RCP"/>
+                <outlet property="mainView" destination="eow-6N-Rma" id="M5y-6P-e1o"/>
+            </connections>
+            <point key="canvasLocation" x="141.59999999999999" y="150.67466266866569"/>
+        </tableViewCell>
+    </objects>
+</document>

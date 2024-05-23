@@ -1,0 +1,111 @@
+/* 
+  Localization.strings
+  HRManager
+
+  Created by Tinh Vu on 1/13/19.
+  Copyright © 2019 Tinh Vu. All rights reserved.
+*/
+
+"Draft" = "Draft";
+"HRExecute" = "Waiting";
+"QLC1Execute" = "Waiting";
+"QLC2Execute" = "Waiting";
+"StoreContent" = "Done";
+"DenialContent" = "Rejected";
+
+// Status
+"Draft" = "Draft";
+"Denial" = "Rejected";
+"Approve" = "Waiting";
+"Publish" = "Done";
+
+"Processing.StartProcessing" = "Start Processing";
+"Processing.Denial" = "Denial";
+"Processing.Approve" = "Approve";
+"Processing.Publish" = "Publish";
+
+//Alert
+"HaveError" = "Have an error occured";
+"PhoneNotEmpty" = "Phone number can not be empty";
+"PassNotEmpty" = "Password can not be empty";
+"OldPassNotEmpty" = "Old password can not be empty";
+"NewPassNotEmpty" = "New password can not be empty";
+"ConfirmPassNotEmpty" = "Confirm password can not be empty";
+"ConfirmPassNotMatch" = "Confirm password not match";
+"ChangePassSuccess" = "Change password success";
+"ConfirmDeleteForm" = "Are you sure to want to delete this form?";
+"EnterComment" = "Enter comment";
+"EnterCommentContent" = "You must enter comment to processing";
+"MustChooseLeaveType" = "You must choose leave type";
+"StartDateEndDate" = "The enddate must greater than startdate";
+"CreatedFormEarly3Day" = "You must created form earlier 3 days only";
+
+"ChooseStartDate" = "Choose start date";
+"ChooseEndDate" = "Choose end date";
+
+"Undefined" = "Undefined";
+"MinAgo" = "min ago";
+"HourAgo" = "hour ago";
+"DayAgo" = "day ago";
+"MonthAgo" = "month ago";
+"YearAgo" = "year ago";
+
+"Delete" = "Delete";
+"Save" = "SAVE";
+"SaveSend" = "SAVE & SEND";
+"Loading" = "Loading...";
+"Edit" = "Edit";
+
+"Profile.Position" = "Position";
+"Profile.StaffCode" = "Staff Code";
+"Profile.Phone" = "Phone";
+"Profile.RemainDay" = "Remain day off";
+"Profile.Logout" = "LOGOUT";
+
+"Home.LeaveType" = "Leave type: ";
+"Home.NumberDay" = "Total: ";
+"Home.Day" = "day";
+"Home.Days" = "days";
+"Home.Title" = "MANAGE LEAVEFORM";
+
+"Notification.Title" = "NOTIFICATIONS";
+
+"Login.Phone" = "PHONE NUMBER";
+"Login.Pass" = "PASSWORD";
+"Login.Login" = "Login";
+"Login.ChangePass" = "Change Password";
+
+"Register.OldPass" = "OLD PASSWORD";
+"Register.NewPass" = "NEW PASSWORD";
+"Register.ConfirmPass" = "CONFIRM PASSWORD";
+"Register.Save" = "Save";
+"Register.Title" = "CHANGE PASSWORD";
+
+"reasonDetail" = "Enter content";
+"allDay" = "All day";
+"morning" = "Morning";
+"afternoon" = "Afternoon";
+"dayOff" = "Off days";
+"timeOff" = "Off shift";
+"singleType" = "Leave type";
+"select_singleType" = "Choose leave type";
+"startDay" = "Start date";
+"endDay" = "End date";
+"contentHolliday" = "Note";
+"ca_kip" = "Shift";
+"LeaveForm.Title" = "REGISTER LEAVE";
+
+"Detail.Position" = "Position";
+"Detail.StaffCode" = "Staff code";
+"Detail.Phone" = "Phone number";
+"Detail.LeaveType" = "Leave type";
+"Detail.OffDays" = "Off days";
+"Detail.CountDay" = "Total off days";
+"Detail.Accepter" = "Accepter";
+"Detail.Content" = "Note";
+"Detail.Title" = "DETAILS LEAVEFORM";
+"Detail.RemainDay" = "Remain days";
+
+"Result.Title" = "Submitted successfully!";
+"Result.Detail" = "Your order was placed successfully. For more details, please check Manage leaveform page";
+"Result.Home" = "Home";

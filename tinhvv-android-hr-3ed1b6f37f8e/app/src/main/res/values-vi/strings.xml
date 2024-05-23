@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HRManager</string>
+    <string name="app_namecom" translatable="false">AutoTimelapse_com</string>
+    <string name="app_namecom_space" translatable="false">A u t o T i m e l a p s e _ c o m</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="Login_UserNamePlaceholder">Tên đăng nhập</string>
+    <string name="Login_PasswordPlaceholder">Mật khẩu</string>
+    <string name="Login_Save">Lưu đăng nhập cho lần sau</string>
+    <string name="Login_ForgotPass">Quên mật khẩu</string>
+    <string name="Login_AboutMe">Giới thiệu về chúng tôi</string>
+    <string name="Login_RegisterTitle">Đăng ký sử dụng sản phẩm</string>
+    <string name="Login_Contact">Liên hệ</string>
+
+    <string name="Register_Name">Họ và tên</string>
+    <string name="Register_Address">Địa chỉ</string>
+    <string name="Register_Email">Email</string>
+    <string name="Register_Phone">Điện thoại</string>
+    <string name="Register_Note">Ghi chú</string>
+    <string name="Register_Register">Đăng ký</string>
+
+    <string name="Forgot_Notification">Thông báo</string>
+    <string name="Forgot_Content">Quý khách vui lòng liên hệ 0917 111 392 hoặc tới chi nhánh gần nhất để được hỗ trợ</string>
+
+    <string name="Contact_Title">Toà nhà Đất Việt</string>
+    <string name="Contact_Address">18 Đốc Ngữ - Quận Ba Đình - Hà Nội</string>
+    <string name="Contact_Mean">Liên hệ</string>
+
+    <string name="Menu_LastLogin">Lần đăng nhập cuối:</string>
+    <string name="Menu_ChangeAvatar">Đổi ảnh đại diện</string>
+    <string name="Menu_ChangePass">Đổi mật khẩu</string>
+    <string name="Menu_Logout">Đăng xuất</string>
+    <string name="Menu_Intro">Giới thiệu dịch vụ - brochure</string>
+    <string name="Menu_Support">Hỗ trợ</string>
+    <string name="Menu_PhoneNumber">Số điện thoại: </string>
+    <string name="Menu_Note">Ghi chú</string>
+    <string name="Menu_Send">Gửi</string>
+
+    <string name="Tabbar_1">Timelapse</string>
+    <string name="Tabbar_4">Camera</string>
+    <string name="Tabbar_2">Giám sát</string>
+    <string name="Tabbar_3">Vận tải</string>
+
+    <string name="All">Tất cả</string>
+    <string name="LoadingImage">Đang tải ảnh</string>
+    <string name="Refresh">Tải lại</string>
+
+    <string name="Timelapse_Search">Tìm kiếm</string>
+    <string name="Timelapse_Position">Vị trí:</string>
+    <string name="Timelapse_VTCT">Vị trí công trình:</string>
+    <string name="Timelapse_SLA">Số lượng ảnh:</string>
+    <string name="Timelapse_NKC">Ngày khởi công:</string>
+    <string name="Timelapse_DKHT">Dự kiến hoàn thành:</string>
+    <string name="Timelapse_TakeDate">Ngày chụp:</string>
+    <string name="Timelapse_TakeTime">Giờ chụp:</string>
+    <string name="Timelapse_Order">Số ảnh:</string>
+
+    <string name="TC_ReportDetail">Báo cáo chi tiết</string>
+    <string name="TC_From">Từ ngày</string>
+    <string name="TC_To">Đến ngày</string>
+    <string name="TC_Type">Loại hàng</string>
+    <string name="TC_Customer">Khách hàng</string>
+    <string name="TC_Filter">Lọc</string>
+
+    <string name="Import_Date">Ngày</string>
+    <string name="Import_Title">Phiếu nhập hàng</string>
+    <string name="Import_Img1">Ảnh chụp lần 1</string>
+    <string name="Import_Img2">Ảnh chụp lần 2</string>
+    <string name="Import_Ticket">Phiếu</string>
+    <string name="Import_Seller">Bên bán</string>
+    <string name="Import_Plate">Biển số</string>
+    <string name="Import_Type">Loại hàng</string>
+    <string name="Import_Price">Đơn giá</string>
+    <string name="Import_KL1">KL1</string>
+    <string name="Import_LT">Lương thực</string>
+    <string name="Import_TC">Tạp chất</string>
+    <string name="Import_QK">Quá khổ</string>
+    <string name="Import_TT">Thành tiền</string>
+    <string name="Import_Note">Ghi chú</string>
+    <string name="Import_TTT">Thanh toán</string>
+    <string name="try_again">Thử lại</string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="select_from_gallery">Chọn từ thư viện</string>
+    <string name="cancel">Thoát</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="finish">Hoàn thành</string>
+    <string name="have_an_error">Đã có lỗi xảy ra_ Vui lòng thử lại sau_</string>
+    <string name="take_camera">Chụp ảnh</string>
+    <string name="take_call">Gọi điện</string>
+    <string name="send_message">Gửi tin nhắn</string>
+
+    <string name="StartProcessing">Trình duyệt</string>
+    <string name="Denial">Từ chối</string>
+    <string name="Stop">Huỷ</string>
+    <string name="Approve">Duyệt</string>
+    <string name="Publish">Đã xử lý</string>
+    <string name="Draft">Lưu nháp</string>
+    <string name="StopContent">Đã huỷ</string>
+    <string name="DenialContent">Từ chối</string>
+    <string name="QuanLyCap1Execute">QLC1 duyệt</string>
+    <string name="QuanLyCap2Execute">QLC2 duyệt</string>
+    <string name="HCNSExecute">HCNS duyệt</string>
+    <string name="StoreContent">Đã xử lý</string>
+
+    <string name="OLExecute">Operator Leader duyệt</string>
+    <string name="SMExecute">Section Manager duyệt</string>
+    <string name="DMExecute">Department Manager duyệt</string>
+    <string name="GDExecute">General Director duyệt</string>
+    <string name="HRExecute">HR duyệt</string>
+
+    <string name="OperatorStopContent">Operator Leader hủy</string>
+    <string name="StaffStopContent">Staff hủy</string>
+    <string name="SMStopContent">Section Manager hủy</string>
+    <string name="DMStopContent">Department Manager hủy</string>
+    <string name="OperatorDenialContent">Operator Leader từ chối</string>
+    <string name="StaffDenialContent">Staff từ chối</string>
+    <string name="SMDenialContent">Section Manager từ chối</string>
+    <string name="DMDenialContent">Department Manager từ chối</string>
+
+    <string name="HaveError">Có lỗi xảy ra</string>
+    <string name="PhoneNotEmpty">SDT không được trống</string>
+    <string name="PassNotEmpty">Mật khẩu không được trống</string>
+    <string name="OldPassNotEmpty">Mật khẩu cũ không được trống</string>
+    <string name="NewPassNotEmpty">Mật khẩu mới không được trống</string>
+    <string name="ConfirmPassNotEmpty">Xác nhận Mật khẩu không được trống</string>
+    <string name="ConfirmPassNotMatch">Xác nhận Mật khẩu không chính xác</string>
+    <string name="ChangePassSuccess">Đổi mật khẩu thành công</string>
+    <string name="ConfirmDeleteForm">Bạn có chắc muốn xoá đơn này không?</string>
+    <string name="EnterComment">Nhập comment</string>
+    <string name="EnterCommentContent">Bạn phải nhập comment để thực hiện</string>
+    <string name="MustChooseLeaveType">Bạn phải chọn loại đơn</string>
+    <string name="StartDateEndDate">Ngày kết thúc phải lớn hơn ngày hiện tại</string>
+    <string name="CreatedFormEarly3Day">Bạn phải tạo đơn xin nghỉ trước 3 ngày</string>
+    <string name="ChooseStartDate">Chọn ngày bắt đầu</string>
+    <string name="ChooseEndDate">Chọn ngày kết thúc</string>
+    <string name="Undefined">Không xác định</string>
+    <string name="MinAgo">phút trước</string>
+    <string name="HourAgo">giờ trước</string>
+    <string name="DayAgo">ngày trước</string>
+    <string name="MonthAgo">tháng trước</string>
+    <string name="YearAgo">năm trước</string>
+    <string name="Delete">Xoá</string>
+    <string name="Save">Lưu</string>
+    <string name="SaveSend">Lưu và gửi</string>
+    <string name="Loading">Đang tải___</string>
+    <string name="Profile_Position">Vị trí</string>
+    <string name="Profile_StaffCode">Mã nhân viên</string>
+    <string name="Profile_Phone">Số điện thoại</string>
+    <string name="Profile_RemainDay">Số ngày nghỉ phép còn lại</string>
+    <string name="Profile_Logout">ĐĂNG XUẤT</string>
+    <string name="Home_LeaveType">Loại phép: </string>
+    <string name="Home_NumberDay">Số ngày nghỉ: </string>
+    <string name="Home_Day">ngày</string>
+    <string name="Home_Days">ngày</string>
+    <string name="Notification_Title">Thông báo</string>
+    <string name="Login_Phone">SỐ ĐIỆN THOẠI</string>
+    <string name="Login_Pass">MẬT KHẨU</string>
+    <string name="Login_Login">Đăng nhập</string>
+    <string name="Login_ChangePass">Thay đổi mật khẩu</string>
+    <string name="Register_OldPass">MẬT KHẨU CŨ</string>
+    <string name="Register_NewPass">MẬT KHẨU MỚI</string>
+    <string name="Register_ConfirmPass">XÁC NHẬN MẬT KHẨU</string>
+    <string name="Register_Save">Lưu</string>
+    <string name="Register_Title">THAY ĐỔI MẬT KHẨU</string>
+    <string name="Home_Title">Quản lý đơn nghỉ</string>
+    <string name="reasonDetail">Nhập nội dung</string>
+    <string name="allDay">Cả ngày</string>
+    <string name="morning">Nghỉ sáng</string>
+    <string name="afternoon">Nghỉ chiều</string>
+    <string name="dayOff">Nghỉ ngày</string>
+    <string name="timeOff">Nghỉ ca</string>
+    <string name="singleType">Loại đơn</string>
+    <string name="select_singleType">Chọn loại đơn</string>
+    <string name="startDay">Ngày bắt đầu</string>
+    <string name="endDay">Ngày kết thúc</string>
+    <string name="contentHolliday">Ghi chú</string>
+    <string name="ca_kip">Ca/kíp</string>
+    <string name="LeaveForm_Title">Đăng ký nghỉ</string>
+    <string name="Detail_Position">Chức vụ</string>
+    <string name="Detail_StaffCode">Mã nhân viên</string>
+    <string name="Detail_Phone">Số điện thoại</string>
+    <string name="Detail_LeaveType">Loại đơn</string>
+    <string name="Detail_OffDays">Ngày nghỉ</string>
+    <string name="Detail_CountDay">Số ngày nghỉ</string>
+    <string name="Detail_Accepter">Người duyệt</string>
+    <string name="Detail_Content">Ghi chú</string>
+    <string name="Detail_Title">CHI TIẾT ĐƠN NGHỈ</string>
+    <string name="Detail_RemainDay">Ngày phép còn lại</string>
+    <string name="sendSuccess">Gửi thành công</string>
+    <string name="send_success_content">Yêu cầu của bạn đã được chuyển đi thành công. Để xem chi tiết vui lòng kiểm tra tại trang quản lý đăng ký nghỉ</string>
+    <string name="search">Tìm kiếm…</string>
+    <string name="Waiting">Chờ duyệt</string>
+    <string name="Done">Đã duyệt</string>
+    <string name="edit">Sửa</string>
+    <string name="calendar">Calendar</string>
+    <string name="ChangePassFailed">Thay đổi mật khẩu không thành công</string>
+    <string name="loginFailed">Đăng nhập không thành công</string>
+    <string name="ACCOUNT_NOT_EXISTED">Tài khoản không tồn tại</string>
+</resources>

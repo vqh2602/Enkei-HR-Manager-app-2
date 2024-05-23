@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Picker" customModule="HRManager" customModuleProvider="target">
+            <connections>
+                <outlet property="myPicker" destination="pK4-22-IiH" id="pAX-rl-4Ir"/>
+                <outlet property="otherView" destination="Vco-5J-6LD" id="2FM-nd-gEG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vr6-tn-zTx"/>
+                <outlet property="viewToolbar" destination="Tq2-wd-IHq" id="eeZ-gS-LZM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVr-vG-Vvq">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pK4-22-IiH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <date key="date" timeIntervalSinceReferenceDate="569170410.06662297">
+                                <!--2019-01-14 14:53:30 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="pK4-22-IiH" firstAttribute="top" secondItem="sVr-vG-Vvq" secondAttribute="top" id="L0Q-M0-5oX"/>
+                        <constraint firstAttribute="bottom" secondItem="pK4-22-IiH" secondAttribute="bottom" id="NZs-r3-FEk"/>
+                        <constraint firstAttribute="height" constant="150" id="gX4-Qg-RIt"/>
+                        <constraint firstAttribute="trailing" secondItem="pK4-22-IiH" secondAttribute="trailing" id="iDb-Xs-8dT"/>
+                        <constraint firstItem="pK4-22-IiH" firstAttribute="leading" secondItem="sVr-vG-Vvq" secondAttribute="leading" id="mEz-RZ-OTE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq2-wd-IHq">
+                    <rect key="frame" x="0.0" y="477" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZlB-3o-uLC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vco-5J-6LD">
+                    <rect key="frame" x="0.0" y="20" width="375" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="3Gv-yd-x6v" appends="YES" id="H8y-TJ-IIJ"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vco-5J-6LD" secondAttribute="trailing" id="8fH-H5-HVb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tq2-wd-IHq" secondAttribute="trailing" id="CR4-Si-edR"/>
+                <constraint firstItem="Tq2-wd-IHq" firstAttribute="top" secondItem="Vco-5J-6LD" secondAttribute="bottom" id="EXj-vS-sBA"/>
+                <constraint firstItem="sVr-vG-Vvq" firstAttribute="top" secondItem="Tq2-wd-IHq" secondAttribute="bottom" id="WNW-ug-5IN"/>
+                <constraint firstItem="sVr-vG-Vvq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YBl-BU-Jpi"/>
+                <constraint firstItem="Vco-5J-6LD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cic-BI-Jk1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sVr-vG-Vvq" secondAttribute="trailing" id="dNP-Y1-fWy"/>
+                <constraint firstItem="Vco-5J-6LD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dUA-PI-w2b"/>
+                <constraint firstItem="Tq2-wd-IHq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h0A-H9-pg6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sVr-vG-Vvq" secondAttribute="bottom" id="zXZ-wF-dEg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+        <tapGestureRecognizer id="3Gv-yd-x6v">
+            <connections>
+                <action selector="didTapOtherView:" destination="-1" id="rIV-4K-KvQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

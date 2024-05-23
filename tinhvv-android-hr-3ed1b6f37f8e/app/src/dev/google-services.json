@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1008036681259",
+    "firebase_url": "https://dbonline04.firebaseio.com",
+    "project_id": "dbonline04",
+    "storage_bucket": "dbonline04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008036681259:android:dbd184c863525d55",
+        "android_client_info": {
+          "package_name": "com.athsoftware.hrm.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008036681259-hra9an52c4b0uf9m86o1hqj1gbknajr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHQZ4eF8Vm2VLDAAL9QTGzy0gS8mZM0yk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryReason" customModule="HRManager" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="WJt-oa-71P" id="Csp-iS-vzj"/>
+                <outlet property="tableView" destination="FhU-aq-65m" id="XlV-RU-MsM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZiX-mG-Jz5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJt-oa-71P">
+                    <rect key="frame" x="45" y="90" width="285" height="507"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-oy-RFR">
+                            <rect key="frame" x="0.0" y="466" width="285" height="1"/>
+                            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="48a-kp-Yay"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTU-Ch-Wcy">
+                            <rect key="frame" x="140" y="467" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="TiA-jx-JG5"/>
+                            </constraints>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" red="0.42745098039215684" green="0.72941176470588232" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapCancel:" destination="-1" eventType="touchUpInside" id="6YV-O6-nvO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-JR-PEh">
+                            <rect key="frame" x="210" y="467" width="50" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3aU-Tk-kiK"/>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.42745098039215684" green="0.72941176470588232" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapOk:" destination="-1" eventType="touchUpInside" id="tKp-1s-Xq8"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FhU-aq-65m">
+                            <rect key="frame" x="0.0" y="10" width="285" height="456"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QhV-JR-PEh" secondAttribute="bottom" id="05Z-fo-Xjs"/>
+                        <constraint firstAttribute="trailing" secondItem="QhV-JR-PEh" secondAttribute="trailing" constant="25" id="2pG-MY-E23"/>
+                        <constraint firstAttribute="trailing" secondItem="FhU-aq-65m" secondAttribute="trailing" id="7Mt-rF-V8q"/>
+                        <constraint firstItem="QhV-JR-PEh" firstAttribute="leading" secondItem="MTU-Ch-Wcy" secondAttribute="trailing" constant="10" id="9kS-he-Kz6"/>
+                        <constraint firstItem="QhV-JR-PEh" firstAttribute="top" secondItem="Fxw-oy-RFR" secondAttribute="bottom" id="GFG-tV-ynX"/>
+                        <constraint firstAttribute="trailing" secondItem="Fxw-oy-RFR" secondAttribute="trailing" id="UrP-8b-qpU"/>
+                        <constraint firstItem="FhU-aq-65m" firstAttribute="leading" secondItem="WJt-oa-71P" secondAttribute="leading" id="YVB-O8-Bkc"/>
+                        <constraint firstItem="MTU-Ch-Wcy" firstAttribute="top" secondItem="Fxw-oy-RFR" secondAttribute="bottom" id="Z1X-O5-XnF"/>
+                        <constraint firstItem="Fxw-oy-RFR" firstAttribute="top" secondItem="FhU-aq-65m" secondAttribute="bottom" id="nCH-Ea-H18"/>
+                        <constraint firstAttribute="bottom" secondItem="Fxw-oy-RFR" secondAttribute="bottom" constant="40" id="wCM-ZA-Uh6"/>
+                        <constraint firstAttribute="bottom" secondItem="MTU-Ch-Wcy" secondAttribute="bottom" id="xnZ-oI-1O6"/>
+                        <constraint firstItem="Fxw-oy-RFR" firstAttribute="leading" secondItem="WJt-oa-71P" secondAttribute="leading" id="zfa-df-pCR"/>
+                        <constraint firstItem="FhU-aq-65m" firstAttribute="top" secondItem="WJt-oa-71P" secondAttribute="top" constant="10" id="zh0-lM-iNX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WJt-oa-71P" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="70" id="6h3-7K-eLg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WJt-oa-71P" secondAttribute="bottom" constant="70" id="HRT-IC-kih"/>
+                <constraint firstItem="WJt-oa-71P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="Jh2-mm-tSB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WJt-oa-71P" secondAttribute="trailing" constant="45" id="hUl-1S-eQt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
